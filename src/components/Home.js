@@ -4,7 +4,9 @@ import React, { Component } from 'react'
     render() {
         return (
             <div className="home">
-
+                <div className="bird-container">
+  <div className="bird"></div>
+</div>
         
             </div>
         )
