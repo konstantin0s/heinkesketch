@@ -106,3 +106,91 @@ text-align: center;
 align-items: center;
 }
 
+
+.header {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  border-right: 1px solid #666;
+  padding: 0;
+  color: #333;
+  width: 100%;
+}
+
+.header .link {
+  border-top: 1px solid #FFF;
+  padding: 5px;
+}
+
+
+.link:hover {
+  border-left: 10px solid #036;
+  border-right: 1px solid #69c;
+  border-bottom: 1px solid #369;
+  background-color: #69f;
+  color: #fff;
+  transition: all .5s ease-in;
+  border-radius: 3px;
+}
+
+.link {
+  display: block;
+  padding: 4px 4px 4px 0.5em;
+  border-left: 10px solid #369;
+  border-right: 1px solid #69c;
+  border-bottom: 1px solid #369;
+  color: #E5DEAC;
+  background-color: #495961;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

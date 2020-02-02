@@ -4,12 +4,13 @@ import { Link } from 'react-router-dom';
 
 function Header() {
     return (
-        <header style={headerStyle}>
+        <header className="header" style={headerStyle}>
             <h1>HeinkeSketch</h1>
-            <Link style={linkStyle}
+            <Link className="link" style={linkStyle}
             to="/" >Home</Link> | <Link 
-            style={linkStyle} to="/beers" >Beers</Link> | 
-            <Link 
+            style={linkStyle} className="link"
+            to="/beers" >Beers</Link> | 
+            <Link className="link"
             style={linkStyle} to="/randombeer" > Random Beer</Link>
         </header>
     );
