@@ -64,15 +64,16 @@ height: 30vh;
 
  .cardo {
 position: relative;
-height: 50vh;
+height: 60vh;
 background-color: #f1bb63;
 box-shadow: 10px 5px 5px #eb9c1d;
 padding: 15px 5px;
-width: 80%;
+width: 75%;
 left: 15px;
 margin-bottom: 15px;
 cursor: pointer;
 transition: all .2s ease-in-out;
+border-radius: 5px;
 }
 
 .cardo:hover , .one-card:hover {
@@ -82,6 +83,8 @@ transition: all .2s ease-in-out;
 .cardo img, .one-card img {
   width: 100px;
   height: 100px;
+  position: relative;
+  left: 30px;
 }
 
 .one-card {
@@ -143,17 +146,123 @@ align-items: center;
   background-color: #495961;
 }
 
+.card__svg {
+  position: absolute;
+  left: 0;
+  top: 5px;
+}
+
+.card-title {
+  text-align: center;
+  font-size: 0.8em;
+}
+
+.card-text {
+  word-break: break-all;
+  font-size: 0.75em;
+}
+
+.card-body .btn-primary {
+  font-size: 0.7em;
+  display: inline-block;
+  width: 100%;
+}
+
+.card-body {
+  position: relative;
+  top: 60px;
+}
+
+@media only screen and (min-width: 400px) and (max-width: 599px) {
 
 
+  .ul {
+display: flex;
+flex-direction: column;
+  }
+
+  .cardo {
+    flex: 50%;
+    height: 46vh;
+  }
+
+  .card-body {
+    position: relative;
+    top: 90px;
+  }
+
+  .card__svg {
+    top: -20px;
+  }
+}
 
 
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+  
+  
+  .cardo {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+    align-content: center;
 
+  }
 
+  .card-body {
+    position: relative;
+    top: 65px;
+  }
 
+  .card__svg {
+    top: 80px;
+  }
+}
 
+@media only screen and (min-width: 768px) and (max-width: 899px) {
+  .cardo {
+    height: 50vh;
+  }
 
+  .card-body {
+    position: relative;
+    top: 85px;
+  }
 
+  .card__svg {
+    top: 80px;
+  }
+}
 
+@media only screen and (min-width: 900px) and (max-width: 1149px) {
+  .cardo {
+    height: 55vh;
+  }
+
+  .card-body {
+    position: relative;
+    top: 90px;
+  }
+
+  .card__svg {
+    top: 50px;
+  }
+}
+
+@media only screen and (min-width: 1150px) and (max-width: 1390px) {
+
+  .cardo {
+    height: 55vh;
+  }
+
+  .card-body {
+    position: relative;
+    top: 90px;
+  }
+
+ }
+ 
 
 
 
