@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import Footer from './Footer';
-import './css/beers.css'
+import './css/beers.css';
+import { Link } from 'react-router-dom';
 import axios from 'axios';
-;
+
 
 class Beers extends Component {
 
@@ -38,7 +39,8 @@ class Beers extends Component {
     <h5 className="card-title">{beer.name}</h5>
     <p className="card-text">{beer.description.slice(50, 100)}</p>
     <p>#{beer.tagline}</p>
-    <button className="btn btn-primary">{beer.name}</button>
+    <span className="artLink">
+        <Link className="btn btn-primary linkz" to={`/beer/${beer.id}`}>Read MORE...</Link></span>
   </div>
 </div>
 
