@@ -31,7 +31,7 @@ componentDidMount() {
         const {beer } = this.state;
         return (
             <div>
-              <div id="masthead" className="cards random">
+              <div className="cards random">
     
                
     <div className="one-card" key={beer.id}>

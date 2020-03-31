@@ -12,7 +12,7 @@ export default function Footer() {
            </a>
         </p>
          <p> 
-         RanBeer &copy; Copyright 2020
+         HeinkeSketch &copy; Copyright 2020
        </p>
     </footer>
 

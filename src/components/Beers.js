@@ -19,15 +19,46 @@ class Beers extends Component {
           })
           .catch(err => console.log(err));
       }
+
+      searchingFor = term => {
+        return (x) =>  {
+          return x.name.includes(term) || !term;
+        }
+      }
+    
+      jsUcfirst = str => {
+        return str.charAt(0).toUpperCase() + str.slice(1);
+    }
+    
+      
+    
+    
+      searchHandler =  event => {
+        this.setState({term: 
+        this.jsUcfirst(event.target.value)})
+      }
     
 
     render() {
         console.log(this.state.beers);
         return (
-            <div id="masthead" className="grid">
+            <div className="grid">
+
+    <div className="container">
+    <form>
+
+        <input onChange={this.searchHandler} className="form-item input" type="text"
+          placeholder="Search" aria-label="Search" />
+
+              <div className="search">
+
+              </div>
+
+</form>
+              </div>
        
                 <ul className="ul">
-        { this.state.beers.map(beer => <li
+        { this.state.beers.filter(this.searchingFor(this.state.term)).map(beer => <li
         className="li"
          key={beer.id}>
 

@@ -35,7 +35,7 @@ class RandomBeer extends Component {
       const { beerz } = this.state;
         return (
 
-  <div id="masthead" className="cards random">
+  <div className="cards random">
     
                
       <div className="one-card" key={beerz.id}>

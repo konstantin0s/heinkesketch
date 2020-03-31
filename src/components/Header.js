@@ -4,7 +4,7 @@ import './css/header.css';
 
 function Header() {
     return (
-        <header className="header" style={headerStyle}>
+        <header id="masthead" className="header" style={headerStyle}>
             <h1>HeinkeSketch</h1>
             <Link className="link" style={linkStyle}
             to="/" >Home</Link> | <Link 
