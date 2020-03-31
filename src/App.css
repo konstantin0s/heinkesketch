@@ -1,23 +1,30 @@
-.App {
-  background: url('https://images.pexels.com/photos/2581022/pexels-photo-2581022.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500')  no-repeat center center fixed; 
+* {
+  box-sizing: border-box;
+
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* .App {
+  background: url('https://images.pexels.com/photos/2581022/pexels-photo-2581022.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  width:100%;
-  height:100vh;
-  background-attachment: scroll;
-}
-
-.grid, html {
-  position: relative;
-  background-color: #e0f163;
   width: 100%;
   height: 100vh;
-}
+  background-attachment: scroll;
+} */
 
-.home{
-  background: url('https://images.pexels.com/photos/3552948/pexels-photo-3552948.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500')  no-repeat center center fixed; 
+
+.home {
+  background: url('https://images.pexels.com/photos/3552948/pexels-photo-3552948.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -36,123 +43,21 @@
   height: 125px;
   will-change: background-position;
   animation-name: fly-cycle;
-animation-timing-function: steps(10);
-animation-iteration-count: infinite;
-animation-duration: 1s;
-animation-delay: -3.5s;
+  animation-timing-function: steps(10);
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  animation-delay: -3.5s;
 }
 
 @keyframes fly-cycle {
   100% {
-  background-position: -900px 0;
-  } 
-}
-
-.ul {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1px;
-
-  width: 100%;
-  position: relative;
-height: 30vh;
-  top: 50px;
-  list-style: none;
-
+    background-position: -900px 0;
+  }
 }
 
 
- .cardo {
-position: relative;
-height: 60vh;
-background-color: #f1bb63;
-box-shadow: 10px 5px 5px #eb9c1d;
-padding: 15px 5px;
-width: 75%;
-left: 15px;
-margin-bottom: 15px;
-cursor: pointer;
-transition: all .2s ease-in-out;
-border-radius: 5px;
-}
 
-.cardo:hover , .one-card:hover {
-  transform: scale(1.05);
-}
-
-.cardo img, .one-card img {
-  width: 100px;
-  height: 100px;
-  position: relative;
-  left: 30px;
-}
-
-.one-card {
-  overflow: hidden;
-  position: relative;
-height: 60vh;
-background-color: #f1bb63;
-box-shadow: 10px 5px 5px #eb9c1d;
-padding: 15px 5px;
-width: 60%;
-left: 15%;
-top: 100px;
-margin-bottom: 15px;
-cursor: pointer;
-transition: all .2s ease-in-out;
-align-self: center;
-display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
-text-align: center;
-align-items: center;
-}
-
-
-.header {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 1em;
-  font-weight: bold;
-  border-right: 1px solid #666;
-  padding: 0;
-  color: #333;
-  width: 100%;
-}
-
-.header .link {
-  border-top: 1px solid #FFF;
-  padding: 5px;
-}
-
-
-.link:hover {
-  border-left: 10px solid #036;
-  border-right: 1px solid #69c;
-  border-bottom: 1px solid #369;
-  background-color: #69f;
-  color: #fff;
-  transition: all .5s ease-in;
-  border-radius: 3px;
-}
-
-.link {
-  display: block;
-  padding: 4px 4px 4px 0.5em;
-  border-left: 10px solid #369;
-  border-right: 1px solid #69c;
-  border-bottom: 1px solid #369;
-  color: #E5DEAC;
-  background-color: #495961;
-}
-
-.card__svg {
-  position: absolute;
-  left: 0;
-  top: 5px;
-}
-
-.card-title {
+/* .card-title {
   text-align: center;
   font-size: 0.8em;
 }
@@ -171,14 +76,14 @@ align-items: center;
 .card-body {
   position: relative;
   top: 60px;
-}
-
+} */
+/* 
 @media only screen and (min-width: 400px) and (max-width: 599px) {
 
 
   .ul {
-display: flex;
-flex-direction: column;
+    display: flex;
+    flex-direction: column;
   }
 
   .cardo {
@@ -198,8 +103,8 @@ flex-direction: column;
 
 
 @media only screen and (min-width: 600px) and (max-width: 767px) {
-  
-  
+
+
   .cardo {
     height: 50vh;
     display: flex;
@@ -261,45 +166,4 @@ flex-direction: column;
     top: 90px;
   }
 
- }
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+} */

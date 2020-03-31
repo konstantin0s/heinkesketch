@@ -1,0 +1,36 @@
+.one-card {
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+    background-color: #f7eee0;
+    padding: 15px 5px;
+    width: 70%;
+    left: 15%;
+    top: 100px;
+    margin-bottom: 14em;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.one-card img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    position: relative;
+    left: 0em;
+    zoom: 0.9;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.one-card img:hover {
+    transform: scale(1.05);
+}
