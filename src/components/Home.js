@@ -2,19 +2,23 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import styled, { keyframes } from 'styled-components';
 import { bounce } from 'react-animations';
+import { bounceInDown } from 'react-animations';
+import { bounceInUp } from 'react-animations';
 
 const bounceAnimation = keyframes`${bounce}`;
+const bounceInx = keyframes`${bounceInDown}`;
+const bounceAndUp = keyframes`${bounceInUp}`;
  
 const BouncyDiv = styled.div`
   animation: infinite 5s ${bounceAnimation};
 `;
 
 const BounceDiv = styled.div`
-  animation: infinite 3s ${bounceAnimation};
+  animation: infinite 3s ${bounceInx};
 `;
 
 const BouDiv = styled.div`
-  animation: infinite 9s ${bounceAnimation};
+  animation: infinite 9s ${bounceAndUp};
 `;
 
 
