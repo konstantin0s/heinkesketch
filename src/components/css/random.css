@@ -34,3 +34,11 @@
 .one-card img:hover {
     transform: scale(1.05);
 }
+
+@media screen and (max-width: 689px) {
+    .one-card {
+        width: 90%;
+        left: 5%;
+        position: relative;
+    }
+}

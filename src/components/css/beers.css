@@ -251,7 +251,7 @@ input::placeholder {
         opacity: 1;
         cursor: text;
     }
-    
+
     input:focus~.search {
         right: -330px;
     }
@@ -284,4 +284,5 @@ input::placeholder {
     .cardo .card-body {
         left: 3em;
     }
+
 }
