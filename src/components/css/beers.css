@@ -15,9 +15,9 @@ body {
 
 
 .container {
-    position: absolute;
+    position: relative;
     margin: auto;
-    top: -500px;
+    top: 80px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -221,29 +221,6 @@ input::placeholder {
 
 }
 
-@media screen and (min-width: 689px) and (max-width: 990px) {
-
-    .grid {
-        text-align: center;
-    }
-
-
-    .ul {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 1px;
-        width: 100%;
-        position: relative;
-        height: 30vh;
-        top: 230px;
-        list-style: none;
-        margin: 0 2em 4em 2em;
-    }
-
-    .cardo .card-img-top {
-        left: 0em;
-    }
-}
 
 @media screen and (max-width: 688px) {
     input:focus {
@@ -285,4 +262,34 @@ input::placeholder {
         left: 3em;
     }
 
+}
+
+
+@media screen and (min-width: 689px) and (max-width: 990px) {
+
+    .container {
+        position: relative;
+        top: 60px;
+    }
+
+    .grid {
+        text-align: center;
+    }
+
+
+    .ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1px;
+        width: 100%;
+        position: relative;
+        height: 30vh;
+        top: 230px;
+        list-style: none;
+        margin: 0 2em 4em 2em;
+    }
+
+    .cardo .card-img-top {
+        left: 0em;
+    }
 }
