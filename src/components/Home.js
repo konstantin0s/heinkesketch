@@ -1,16 +1,59 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import styled, { keyframes } from 'styled-components';
+import { bounce } from 'react-animations';
+
+const bounceAnimation = keyframes`${bounce}`;
+ 
+const BouncyDiv = styled.div`
+  animation: infinite 5s ${bounceAnimation};
+`;
+
+const BounceDiv = styled.div`
+  animation: infinite 3s ${bounceAnimation};
+`;
+
+const BouDiv = styled.div`
+  animation: infinite 9s ${bounceAnimation};
+`;
+
 
  class Home extends Component {
     render() {
         return (
             <div className="home">
                 <div className="bird-container">
-  <div className="bird"></div>
-</div>
+
+                    <div className="bird">
+                    <BouncyDiv>
+                    <Link className="link"
+                     style={linkStyle} to="/randombeer" > Random Beer</Link>
+                     </BouncyDiv>
+
+                     <BounceDiv>
+                    <Link className="link"
+                     style={linkStyle} to="/randombeer" > Random Beer</Link>
+                     </BounceDiv>
+
+                     <BouDiv>
+                    <Link className="link"
+                     style={linkStyle} to="/randombeer" > Random Beer</Link>
+                     </BouDiv>
+                    
+                    </div>
+                </div>
         
             </div>
         )
     }
+}
+
+
+const linkStyle = {
+    color: '#fff',
+    textDecoration: 'none',
+    marginRight: '20px',
+    marginLeft: '20px'
 }
 
 export default Home;

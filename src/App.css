@@ -22,28 +22,42 @@ body {
   height: 100vh;
 }
 
-.bird {
+ .bird {
   position: relative;
   top: 100px;
   left: 200px;
-  background-image: url('https://images.vexels.com/media/users/3/131435/isolated/preview/d4a76c411a718499087d0f619dd89540-simple-maple-leave-silhouette-by-vexels.png');
   background-size: auto 100%;
   width: 220px;
-  background-color: transparent;
-  height: 125px;
-  will-change: background-position;
-  animation-name: fly-cycle;
-  animation-timing-function: steps(10);
-  animation-iteration-count: infinite;
-  animation-duration: 1s;
-  animation-delay: -3.5s;
 }
+
+.bird .sc-AxjAm:nth-of-type(1) {
+  position: absolute;
+  left: 430px;
+  width: 200px;
+  top: -40px;
+}
+
+.bird .sc-AxjAm:nth-of-type(2) {
+  position: absolute;
+  left: 30px;
+  width: 200px;
+  top: 40px;
+}
+
+.bird .sc-AxjAm:nth-of-type(3) {
+  position: absolute;
+  left: 230px;
+  width: 200px;
+  top: 100px;
+}
+
+/* 
 
 @keyframes fly-cycle {
   100% {
     background-position: -900px 0;
   }
-}
+} */
 
 
 
