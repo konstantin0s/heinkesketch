@@ -21,14 +21,36 @@
 }
 
 .one-card img {
-    width: 350px;
+    width: 450px;
     height: 350px;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     position: relative;
     left: 0em;
     zoom: 0.9;
     cursor: pointer;
     transition: all .2s ease-in-out;
+    background-size: contain;
+}
+
+.phantom {
+    position: relative;
+    top: 20px;
+    margin-bottom: 100px;
+}
+
+.MuiCardMedia-img {
+    object-fit: contain;
+}
+
+.phantom img {
+    width: 350px;
+    height: 350px;
+    position: relative;
+    left: 0em;
+    zoom: 0.9;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    background-size: contain;
 }
 
 .one-card img:hover {
